@@ -41,19 +41,26 @@ TextEditingController _correo = TextEditingController();
 
   return Column(
     children: [
-       TextField(
-        controller: _correo,
-        decoration: InputDecoration(
-          label: Text("correo"),
-          border: OutlineInputBorder()
-        ),
+       Padding(
+         padding: const EdgeInsets.all(8.0),
+         child: TextField(
+          controller: _correo,
+          decoration: InputDecoration(
+            label: Text("correo"),
+            border: OutlineInputBorder()
+          ),
+         ),
        ),
-       TextField(
-        controller: _pass,
-        decoration: InputDecoration(
-          label: Text("pass"),
-          border: OutlineInputBorder()
-        ),
+
+       Padding(
+         padding: const EdgeInsets.all(8.0),
+         child: TextField(
+          controller: _pass,
+          decoration: InputDecoration(
+            label: Text("pass"),
+            border: OutlineInputBorder()
+          ),
+         ),
        ),
        FilledButton(onPressed: ()=>(), child: Text("Login"))
     ],
